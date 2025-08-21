@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Protected Page</title>
+  <style>
+    body{margin:auto;background:linear-gradient(180deg,black,rgb(230, 19, 114));}
+    .main{color:white;
+        text-shadow: 1px 1px 5px rgb(245, 241, 241);
+        
+          margin: 0px;
+          text-align: center;}
+    .name{font-size: 50px;}
+    #content {
+      display: none;
+      background-color: white;
+    
+      width: 90%;
+      border-radius: 5px;
+
+   
+     
+    }
+    .password{padding: 10px;
+      font-size: 16px;
+      margin: 0px 0;
+      text-align: center;
+      color:rgb(18, 150, 64);
+      width:70%;
+      border:2px solid rgb(250, 250, 250);
+      border-radius:5px;}
+    input[type="password"], button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 0px 0;
+      maxlength:7;
+      text-align: center;
+      color: rgb(6, 85, 39);
+      width:70%;
+      border:2px solid rgb(250, 250, 250);
+      border-radius:5px;
+      cursor: pointer;
+    }
+    .pass{background-color:rgba(0,0,0,0.4);
+      width:90%;
+      border:solid 2px rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 20px;
+      color:white;}
+      .log{margin-top:-20px;}
+      .succ{color:#0a806a;
+        padding: 20px;
+        margin-top:-20px;
+        text-align: justify;
+        
+
+            }
+
+     .visit{color:white;
+            background-color:blue;
+            width:60%;
+            padding:10px;
+            border-radius: 5px;
+            font-size: 30px;
+            cursor: pointer;
+            
+
+            }  
+
+    .cancel{color:white;
+            background-color:green;
+            width:20%;
+            padding:10px;
+            border-radius: 5px;
+            cursor:pointer;}
+
+          .a{text-decoration: none;}  
+         
+  </style>
+</head>
+<body bgcolor="gray"><div class="main">
+
+  <p class="name">Tara ma jatri nibas</p>
+  
+
+
+
+</div>
+<p style="color:white;text-align:center;font-size:25px;margin-top: -35px;;">Kakdwip, Lot no 8-Golpark, South 24 PGS, West bengal -743347</p>
+<br><br>
+<center>
+<div class="pass">
+<image src="https://cdn-icons-png.flaticon.com/512/295/295128.png" width="20%" height="20%" 
+style=" border-radius:100px; border:solid white 2px"
+>
+
+
+  <h1>Loging</h1>
+  <p class="log">Log in to go to the main website.</p>
+  <div id="login">
+    <input type="Number" class="password" placeholder="Enter Your ID" required><br><br>
+    <input type="password" id="password" placeholder="Enter Password" required><br><br>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+
+  <div id="content">
+   <image src="https://cdn-icons-gif.flaticon.com/17702/17702130.gif" height="130px">
+    <h1><font color="green">Sucsessfully</font></h1><center>
+    <p class="succ">Thank you very much for logging in to the page. Click Visit Now to go to my website.</p></center>
+
+    <a href="https://suman9907bit.github.io/Jana-online-service-/" target="blank" class="a"><div class="visit">
+  Hotel Data Entry</div></a><br>
+
+<a href="https://suman9907bit.github.io/Jana-online-service-/" target="blank" class="a"><div class="visit">
+    Dacuments Veryfication</div></a><br>
+
+
+    <a href="https://suman9907bit.github.io/Jana-online-service-/" target="blank" class="a"><div class="visit">
+    .......</div></a>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="#" class="a"><div class="cancel">
+    Cancel</div></a>
+
+    
+<br><br>
+
+  </div><br><br>
+</div></center>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      const correctPassword = "504";
+
+      if (password === correctPassword) {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("login").style.display = "none";
+      } else {
+        alert("Wrong password!");
+        document.getElementById("password").value = "";
+      }
+    }
+  </script><br><br><br>
+
+<center>
+  <div style="background-color:rgba(0,0,0,0.2);width: 95%;border-radius: 5px;border:2px solid rgb(20, 107, 138);"><br>
+   <font size="10px" color="white">📢 </font> 
+  <marquee style="background-color:rgba(0,0,0,0.4);width:90%;color:white;border-radius: 20px;height:30px;border:1px solid white;">
+    
+    📢 নোটিশ: সাইটটিতে লগইন করতে হলে অনুমোদিত পাসওয়ার্ড থাকা আবশ্যক। Only for owner use.
+  
+  </marquee><br><br></center>
+</biv><br>
+
+  
+
+  
+  <br><br><br>
+</body>
+</html>
